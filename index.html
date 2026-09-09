@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of [Your Name] - Aspiring MERN Stack Developer specializing in MongoDB, Express.js, React.js, and Node.js.">
+    <title>[Your Name] | Aspiring MERN Stack Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <!-- Brand Logo (CUSTOMIZATION: Replace [Your Name] or Brand) -->
+            <a href="#home" class="logo" aria-label="Home page">
+                <span class="logo-accent"></span>Muhammad Imran MERN Stack Developer<span class="logo-accent"></span>
+            </a>
+
+            <!-- Mobile Navigation Toggle Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span> Open for Internships & Junior Roles
+                    </div>
+                    <!-- CUSTOMIZATION: Replace [Your Name] -->
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Muhammad Imran</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Aspiring <span class="typing-text" id="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <!-- CUSTOMIZATION: Short intro text -->
+                    <p class="hero-description">
+                        I am a passionate developer currently mastering full-stack web development with MongoDB, Express.js, React.js, and Node.js. Dedicated to writing clean code and building scalable, responsive web applications.
+                    </p>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <!-- Social Links (CUSTOMIZATION: Replace URLs) -->
+                    <div class="social-links">
+                        <a href="[GitHub URL]" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="[LinkedIn URL]" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:[Email Address]" class="social-link" aria-label="Email Contact">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Picture / Illustration Section -->
+                <div class="hero-image-wrapper reveal">
+                    <div class="glow-backdrop"></div>
+                    <div class="profile-card-glass">
+                        <!-- CUSTOMIZATION: Replace [Profile Image] src with your actual photo path (e.g. src="profile.jpg") -->
+                        <div class="profile-img-container">
+                            <img src="./my-imgae-imran.jpg" alt="Muhammad Imran - Profile Photo" class="profile-img" id="hero-profile-img">
+                            <div class="profile-img-placeholder" id="profile-fallback" style="display: none;">
+                                <i class="fa-solid fa-user-code"></i>
+                                <span>Muhammad Imran</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-badge badge-react">
+                            <i class="fa-brands fa-react"></i> React.js
+                        </div>
+                        <div class="floating-badge badge-node">
+                            <i class="fa-brands fa-node-js"></i> Node.js
+                        </div>
+                        <div class="floating-badge badge-mongo">
+                            <i class="fa-solid fa-leaf"></i> MongoDB
+                        </div>
+
+                        <!-- Mini Code Snippet Bar -->
+                        <div class="profile-card-footer">
+                            <span class="dot green"></span>
+                            <code>Muhammad Imran &bull; MERN Stack</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">Get to know my journey, passion, and aspirations</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Personal Info Text (CUSTOMIZATION: Replace [About Me]) -->
+                    <div class="about-text-card glass-card reveal">
+                        <h3 class="card-title"><i class="fa-solid fa-user-astronaut"></i> Aspiring Full-Stack Developer</h3>
+                        <p class="about-paragraph">
+                            Hello! I'm <strong>Muhammad Imran</strong>, an aspiring software developer with a strong foundation in modern web technologies. My journey began with a curiosity for how web applications work behind the scenes, leading me to delve deeply into full-stack development.
+                        </p>
+                        <p class="about-paragraph">
+                            I am actively building projects using the <strong>MERN Stack</strong> (MongoDB, Express.js, React.js, and Node.js). I enjoy solving real-world problems through clean code, user-centered design, and scalable architecture.
+                        </p>
+                        <p class="about-paragraph">
+                            Currently, I am looking for <strong>internship, freelance, and junior developer opportunities</strong> where I can contribute to meaningful projects, collaborate with experienced engineers, and accelerate my growth.
+                        </p>
+
+                        <div class="about-details-list">
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                <!-- CUSTOMIZATION: Location -->
+                                <span class="detail-value">Kohat, Dara Adam khel</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                <!-- CUSTOMIZATION: Email -->
+                                <span class="detail-value">imrankhan1764534@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label"><i class="fa-solid fa-briefcase"></i> Availability:</span>
+                                <span class="detail-value highlight-badge">Open to Work</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Cards -->
+                    <div class="about-stats-grid reveal">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Technologies Learned</div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Coding Hours</div>
+                        </div>
+
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Dedication to Learning</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">Technologies and tools I work with daily</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Category Card -->
+                    <div class="skills-category-card glass-card reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-desktop category-icon"></i>
+                            <h3 class="category-title">Frontend Development</h3>
+                        </div>
+
+                        <div class="skills-list">
+                            <!-- Skill Item 1 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-html5 skill-icon html"></i> HTML5</span>
+                                    <span class="skill-status badge-mastered">Mastered</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 2 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-css3-alt skill-icon css"></i> CSS3</span>
+                                    <span class="skill-status badge-mastered">Mastered</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 3 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-js skill-icon js"></i> JavaScript (ES6+)</span>
+                                    <span class="skill-status badge-mastered">Proficient</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 4 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-react skill-icon react"></i> React.js</span>
+                                    <span class="skill-status badge-learning">Currently Learning</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 5 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-mobile-screen skill-icon responsive"></i> Responsive Design</span>
+                                    <span class="skill-status badge-mastered">Mastered</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Category Card -->
+                    <div class="skills-category-card glass-card reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3 class="category-title">Backend Development</h3>
+                        </div>
+
+                        <div class="skills-list">
+                            <!-- Skill Item 1 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-node-js skill-icon node"></i> Node.js</span>
+                                    <span class="skill-status badge-learning">Currently Learning</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="65%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 2 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-gears skill-icon express"></i> Express.js</span>
+                                    <span class="skill-status badge-learning">Currently Learning</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="65%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 3 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-network-wired skill-icon api"></i> REST APIs</span>
+                                    <span class="skill-status badge-learning">Currently Learning</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & Tools Category Card -->
+                    <div class="skills-category-card glass-card reveal">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3 class="category-title">Database & Tools</h3>
+                        </div>
+
+                        <div class="skills-list">
+                            <!-- Skill Item 1 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-leaf skill-icon mongodb"></i> MongoDB</span>
+                                    <span class="skill-status badge-learning">Currently Learning</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="60%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 2 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon git"></i> Git</span>
+                                    <span class="skill-status badge-mastered">Proficient</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 3 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-github skill-icon github"></i> GitHub</span>
+                                    <span class="skill-status badge-mastered">Proficient</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 4 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-code skill-icon vscode"></i> VS Code</span>
+                                    <span class="skill-status badge-mastered">Mastered</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Skill Item 5 -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-rocket skill-icon postman"></i> Postman</span>
+                                    <span class="skill-status badge-learning">Currently Learning</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Showcase of applications built during my learning journey</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="project-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="mern">MERN Stack</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: MERN Auth -->
+                    <article class="project-card glass-card reveal" data-category="mern">
+                        <div class="project-image-placeholder gradient-1">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node</span>
+                            </div>
+                            <h3 class="project-title">MERN Authentication System</h3>
+                            <p class="project-description">
+                                Secure full-stack authentication system featuring JWT token authorization, password hashing with bcrypt, protected routes, and user profile management.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-github">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: E-Commerce -->
+                    <article class="project-card glass-card reveal" data-category="mern frontend">
+                        <div class="project-image-placeholder gradient-2">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Application</h3>
+                            <p class="project-description">
+                                Modern online store interface with product catalog filtering, dynamic shopping cart, product details modal, and mock payment gateway integration.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-github">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Task Manager -->
+                    <article class="project-card glass-card reveal" data-category="javascript mern">
+                        <div class="project-image-placeholder gradient-3">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                            <h3 class="project-title">Task Manager App</h3>
+                            <p class="project-description">
+                                Productivity web application allowing users to create, update, filter, and delete daily tasks with status tracking and local persistent storage.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-github">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Weather App -->
+                    <article class="project-card glass-card reveal" data-category="frontend javascript">
+                        <div class="project-image-placeholder gradient-4">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Weather API</span>
+                            </div>
+                            <h3 class="project-title">Weather Forecast Application</h3>
+                            <p class="project-description">
+                                Responsive weather application fetching real-time meteorological data, city search, 5-day forecast previews, and dynamic weather condition icons.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-github">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Notes App -->
+                    <article class="project-card glass-card reveal" data-category="javascript mern">
+                        <div class="project-image-placeholder gradient-5">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-note-sticky"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <h3 class="project-title">Smart Notes Application</h3>
+                            <p class="project-description">
+                                Intuitive note-taking application supporting rich text markdown rendering, search indexing, tag categorization, and database synchronization.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-github">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Portfolio Website -->
+                    <article class="project-card glass-card reveal" data-category="frontend javascript">
+                        <div class="project-image-placeholder gradient-6">
+                            <div class="project-icon-wrapper">
+                                <i class="fa-solid fa-address-card"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Vanilla JS</span>
+                            </div>
+                            <h3 class="project-title">Personal Developer Portfolio</h3>
+                            <p class="project-description">
+                                Modern, fast, glassmorphism single-page portfolio website designed with semantic markup, mobile-first CSS grid layout, and interactive features.
+                            </p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-project btn-github">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Journey Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Education & <span class="gradient-text">Journey</span></h2>
+                    <p class="section-subtitle">My academic background and continuous learning path</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h3 class="timeline-title">MERN Stack Development</h3>
+                            <h4 class="timeline-subtitle">Self-Directed Learning & Online Bootcamps</h4>
+                            <p class="timeline-description">
+                                Deep diving into full-stack web development. Mastering MongoDB schema design, Express.js server architecture, React component lifecycle & hooks, and Node.js REST API creation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content glass-card">
+                            <!-- CUSTOMIZATION: Degree & Institution -->
+                            <span class="timeline-date">2025 - 2029</span>
+                            <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+                            <h4 class="timeline-subtitle">Fata University FR Kohat</h4>
+                            <p class="timeline-description">
+                                Currently pursuing undergraduate studies in computer science, focusing on software engineering principles, algorithms, data structures, database management systems, and object-oriented programming.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025</span>
+                            <h3 class="timeline-title">JavaScript & Frontend Certifications</h3>
+                            <h4 class="timeline-subtitle">FreeCodeCamp & Udemy</h4>
+                            <p class="timeline-description">
+                                Completed comprehensive coursework in JavaScript Algorithms and Data Structures, Responsive Web Design, and modern frontend practices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2025</span>
+                            <h3 class="timeline-title">Web Development Fundamentals</h3>
+                            <h4 class="timeline-subtitle">Self-Taught Explorations</h4>
+                            <p class="timeline-description">
+                                Started coding journey with foundational HTML5, CSS3 styling, flexbox/grid layout design, and core programming concepts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-subtitle">Have a project, job offer, or question? Send me a message!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details Sidebar -->
+                    <div class="contact-info-card glass-card reveal">
+                        <h3 class="card-title">Let's Connect</h3>
+                        <p class="contact-info-desc">
+                            I am actively seeking internship, junior developer, and freelance opportunities. Feel free to reach out via form or social channels.
+                        </p>
+
+                        <div class="contact-methods">
+                            <!-- CUSTOMIZATION: Email -->
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-text">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:[Email Address]" class="method-value">imrankhan17645341764534@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- CUSTOMIZATION: Location -->
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="method-text">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">Kohat, Dara Adam Khel</span>
+                                </div>
+                            </div>
+
+                            <!-- CUSTOMIZATION: GitHub -->
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="method-text">
+                                    <span class="method-label">GitHub</span>
+                                    <a href="[GitHub URL]" target="_blank" rel="noopener noreferrer" class="method-value">github.com/programmer804-web/My-portfolio</a>
+                                </div>
+                            </div>
+
+                            <!-- CUSTOMIZATION: LinkedIn -->
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="method-text">
+                                    <span class="method-label">LinkedIn</span>
+                                    <a href="[LinkedIn URL]" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/muhammad-imran-667591277</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card reveal">
+                        <form id="contact-form" novalidate>
+                            <!-- Form Feedback Notification Area -->
+                            <div id="form-message" class="form-message" aria-live="polite"></div>
+
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                                <span class="error-msg" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                                <span class="error-msg" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Internship Opportunity" required>
+                                <span class="error-msg" id="subject-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
+                                <span class="error-msg" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <!-- CUSTOMIZATION: Logo/Name -->
+                <a href="#home" class="logo">
+                    <span class="logo-accent">&lt;</span>[Your Name]<span class="logo-accent"> /&gt;</span>
+                </a>
+                <p class="footer-tagline">Aspiring MERN Stack Developer</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="[GitHub URL]" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="[LinkedIn URL]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:[Email Address]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year"></span> [Your Name]. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top of page">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
